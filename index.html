@@ -8,5 +8,14 @@
 </head>
 <body>
   试试主页
+  <div id="content"></div>
+  <script src="https://cdn.bootcss.com/axios/0.18.0/axios.min.js"></script>
+  <script>
+    console.log(axios)
+    axios.get('https://jshawn.gitee.io/README.md').then(function(res){
+      console.log(res);
+      document.getElementById("content").innerHTML=res
+    })
+  </script>
 </body>
 </html>
