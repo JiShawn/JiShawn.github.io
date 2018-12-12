@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 博客
+title: JSHAWN'S BLOG
 subtitle:
 description:
 keywords:
@@ -73,9 +73,38 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+# theme: landscape
+theme: material-x
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+#theme config for material-x
+##菜单配置
+nav_menu:
+  - name: 主页
+    icon: fas fa-home
+    url: /
+  - name: 项目
+    icon: fas fa-flask
+    url: /a
+  - name: 博客
+    icon: fas fa-rss
+    url: /b
+  - name: 归档
+    icon: fas fa-archive
+    url: /c
+  - name: 关于
+    icon: fas fa-user
+    url: /d
+## 页脚社交信息的写法示例
+social:
+  - icon: fas fa-envelope
+    url: mailto:jshawn@foxmail.com
+  - icon: fab fa-github
+    url: https://github.com/jishawn
+# 博主信息的写法示例
+avatar: https://avatars3.githubusercontent.com/u/35647137?s=400&u=344caf6ab2c36be3902d5801eed4524fd378080d&v=4
+motto: 这是我的座右铭
